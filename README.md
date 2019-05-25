@@ -2,5 +2,5 @@
 the simplest db ever made
 
 ## instruction:
-* lsdb - linux variant
-* wsdb - windows variant
+* linux: just run a lsdb
+* windows: just run a wsdb.exe
