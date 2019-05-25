@@ -1,6 +1,6 @@
 # sdb
-## the simplest db ever made
+the simplest db ever made
 
 ## instruction:
-lsdb - linux variant
-wsdb - windows variant
+* lsdb - linux variant
+* wsdb - windows variant
