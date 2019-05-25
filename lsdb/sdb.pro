@@ -73,4 +73,5 @@ HEADERS += \
     src/fs/dm.h \
     src/core/predicate.h \
     src/core/name.h \
-    src/core/syncronization.h
+    src/core/syncronization.h \
+    src/tests.h

@@ -1,21 +1,4 @@
-#include <iostream>
-
-// ALGEBRA
-#include "src/core/float64.h"
-#include "src/core/integer.h"
-#include "src/core/text.h"
-
-#include "src/core/relation.h"
-
-// INTERPRETER
-#include "src/parser/interpreter.h"
-
-// FILEIO
-#include "src/fs/dm.h"
-#include "src/fs/relationfile.h"
-
-#include <memory>
-
+#include "tests.h"
 using namespace std;
 
 void output(std::string message, sdb::Relation& rel1, sdb::Relation& rel2)
