@@ -19,7 +19,6 @@
 #define semaphore sem_t*
 #elif _WIN32 | _WIN64
 #include <Windows.h>
-#include <string>
 #endif
 
 #define shitMessage(msg) {std::cout << "critical error:" << msg << std::endl;}

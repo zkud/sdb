@@ -13,6 +13,10 @@ sdb::Interpreter::Interpreter()
 
 void sdb::Interpreter::work()
 {
+    std::cout << "welcome sdb command line!!!" << std::endl;
+    std::cout << "ver. 1.0 beta" << std::endl;
+    std::cout << "enter a SQL statement or \"exit;\" to quit" << std::endl;
+
     ::yyin = stdin;
 
     while(continueWork)

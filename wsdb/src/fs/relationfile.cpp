@@ -331,7 +331,6 @@ void sdb::RelationFile::deleteFrom(std::function<bool (const std::vector<std::sh
 // I hate deadlines :(((((
 void sdb::RelationFile::insert(const sdb::Relation &inputRelation)
 {
-    std::cout << "input:" << inputRelation.toString() << std::endl;
     // get values from file
     Relation relation = select();
 

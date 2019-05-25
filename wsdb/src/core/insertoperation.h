@@ -15,7 +15,6 @@
 #include "../exceptions/incorrectargsexception.h"
 
 #include <iostream>
-#define debug(msg) {std::cout << "debug:" << msg << std::endl;}
 
 namespace sdb {
 
@@ -37,8 +36,7 @@ public:
         std::string relationName = popNFromStack(cstack);
         Relation currentRelation = dm.select(relationName);
         Header header = currentRelation.getHeader();
-        size_t elemSize = header.size();
-
+        const long elemSize = header.size();
         Types  htypes = currentRelation.getTypes();
         Body   body(countOfRecords);
 
@@ -86,7 +84,6 @@ public:
             {
                 element[argsCount] = cstack.back();
                 cstack.pop_back();
-
             }
 
             el = element;
@@ -104,7 +101,6 @@ public:
         }
 
         Relation relation(header, body, htypes);
-
 
         // insert relation
         dm.insert(relationName, relation);

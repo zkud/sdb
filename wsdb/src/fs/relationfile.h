@@ -93,7 +93,6 @@ private:
 
     void writeCString (const char * what, size_t whatSize)
     {
-        std::cout << "write" << what << std::endl;
         file.write(what, whatSize);
         file.flush();
     }

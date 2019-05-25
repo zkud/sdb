@@ -12,40 +12,12 @@
 */
 
 // risk is our business
-
-#include "src/tests.cpp"
-
-#include <string>
+#include "src/parser/interpreter.h"
 
 int main(int argc, char **argv)
 {
-    if (argc >= 2)
-    {
-        if (!std::string(argv[1]).compare("io1"))
-        {
-            testIO();
-        }
-
-        if (!std::string(argv[1]).compare("io2"))
-        {
-            testIO2();
-        }
-
-        if (!std::string(argv[1]).compare("alg"))
-        {
-            testAlgebra();
-        }
-
-        if (!std::string(argv[1]).compare("par"))
-        {
-            testParser();
-        }
-
-        if (!std::string(argv[1]).compare("io3"))
-        {
-            testIO3();
-        }
-    }
+    sdb::Interpreter interpreter;
+    interpreter.work();
 
     return 0;
 }
